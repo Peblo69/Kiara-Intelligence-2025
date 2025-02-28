@@ -25,13 +25,13 @@ const supabaseOptions = {
     storage: window.localStorage,
     flowType: 'pkce',
     debug: true,
-    redirectTo: `https://scintillating-arithmetic-d0bbfb.netlify.app/auth/verify`,
+    redirectTo: `https://kiaravision.com/auth/verify`,
     emailAuth: {
       passwordReset: {
-        redirectTo: `https://scintillating-arithmetic-d0bbfb.netlify.app/auth/reset-password`
+        redirectTo: `https://kiaravision.com/auth/reset-password`
       },
       emailConfirm: {
-        redirectTo: `https://scintillating-arithmetic-d0bbfb.netlify.app/auth/verify`
+        redirectTo: `https://kiaravision.com/auth/verify`
       }
     },
     onAuthStateChange: (event: string, session: any) => {
